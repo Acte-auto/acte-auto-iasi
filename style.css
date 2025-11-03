@@ -1,81 +1,67 @@
-:root{
-  --accent:#0d6efd;
-  --bg-overlay: rgba(0,0,0,0.45);
-  --card-bg: rgba(255,255,255,0.95);
-  --text:#222;
-  --muted:#666;
-  --radius:12px;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: url("OIP.webp") no-repeat center center/cover;
+  color: white;
+  min-height: 100vh;
 }
 
-*{box-sizing:border-box}
-body,html{height:100%;margin:0;color:var(--text);background:#f6f7fb}
-
-/* Header / hero with background image */
-.site-header{
-  position:relative;
-  min-height:60vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  background-image: url('OIP.webp');
-  background-size:cover;
-  background-position:center;
-  color: #fff;
-  overflow:hidden;
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
 }
 
-/* dark overlay for readability */
-.site-header .overlay{
-  position:absolute;inset:0;background:var(--bg-overlay);z-index:0;
+h1 {
+  font-size: 2.5rem;
+  margin-top: 80px;
+  background: rgba(255, 255, 255, 0.15);
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 20px;
 }
 
-.nav{
-  position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:18px 20px;
+p {
+  font-size: 1.1rem;
+  margin: 10px auto;
+  max-width: 600px;
+  line-height: 1.6;
 }
-.brand{font-weight:700;text-decoration:none;color:#fff;font-size:1.1rem}
-.hamburger{display:none;background:transparent;border:0;color:#fff;font-size:1.8rem}
 
-/* navigation links */
-.nav-links{list-style:none;margin:0;padding:0;display:flex;gap:14px}
-.nav-links a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:8px}
-.nav-links a:hover{background:rgba(255,255,255,0.08)}
-
-/* Hero content */
-.hero{position:relative;z-index:2;padding:60px 20px 120px;max-width:980px;margin:0 auto;text-align:center}
-.hero h1{font-size:2.2rem;margin:0 0 10px;letter-spacing:0.2px}
-.hero p{margin:0 0 18px;color:#e9eefb;font-size:1.05rem}
-.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;background:var(--accent);color:#fff;font-weight:600}
-.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.18)}
-.btn.large{padding:14px 20px;font-size:1rem}
-
-/* Main content */
-main{max-width:1100px;margin:-60px auto 60px;position:relative;padding:0 16px;z-index:1}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:28px}
-.card{background:var(--card-bg);padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(12,18,31,0.08)}
-.card h3{margin:0 0 10px}
-.info{background:#fff;padding:18px;border-radius:12px;margin-bottom:24px}
-.contact{background:#fff;padding:18px;border-radius:12px}
-.contact-form{display:grid;gap:10px}
-.contact-form input,.contact-form textarea{padding:12px;border-radius:10px;border:1px solid #e6e9ef}
-
-/* Footer */
-.site-footer{text-align:center;color:var(--muted);padding:20px 10px;margin-top:12px}
-
-/* Responsive */
-@media (max-width:900px){
-  .cards{grid-template-columns:repeat(2,1fr)}
-  .hero h1{font-size:1.8rem}
-  .hero{padding:40px 16px 80px}
+.buttons {
+  margin-top: 40px;
 }
-@media (max-width:640px){
-  .nav-links{display:none;position:absolute;right:16px;top:58px;background:rgba(0,0,0,0.7);padding:12px;border-radius:10px;flex-direction:column;min-width:150px}
-  .hamburger{display:block}
-  main{margin-top:-30px;padding:0 12px}
-  .cards{grid-template-columns:1fr}
-  .hero{padding:30px 12px 80px}
-  .hero h1{font-size:1.6rem}
-  .btn{padding:10px 14px;border-radius:10px}
-  .contact-form input,.contact-form textarea{font-size:0.95rem}
+
+.btn {
+  background: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0078e7;
+}
+
+section {
+  margin-top: 60px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+  font-size: 1rem;
 }
