@@ -1,76 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Acte Auto Iași</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="overlay"></div>
-    <nav class="nav">
-      <a class="brand" href="#">Acte Auto Iași</a>
-      <button class="hamburger" id="hambtn" aria-label="Meniu">&#9776;</button>
-      <ul class="nav-links" id="navlinks">
-        <li><a href="#servicii">Servicii</a></li>
-        <li><a href="#preturi">Prețuri</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="hero">
+  <div class="overlay">
+    <header>
       <h1>Acte Auto Iași</h1>
-      <p>Servicii rapide pentru acte auto, import și înmatriculări.</p>
-      <div class="hero-cta">
-        <a class="btn" href="#contact">Contactează-ne</a>
-        <a class="btn ghost" href="#servicii">Vezi servicii</a>
-      </div>
-    </div>
-  </header>
+      <p>Transcriere auto, radiere, numere provizorii, contracte de vânzare-cumpărare și alte servicii auto în Iași.</p>
+    </header>
 
-  <main>
-    <section id="servicii" class="cards">
-      <article class="card">
-        <h3>Înmatriculări</h3>
-        <p>Pregătim dosare, depuneri și înmatriculări provizorii.</p>
-      </article>
-      <article class="card">
-        <h3>Transcrieri</h3>
-        <p>Transfer proprietate și acte pentru autovehicule.</p>
-      </article>
-      <article class="card">
-        <h3>Certificate</h3>
-        <p>Certificat distrugere, dovezi și acte fiscale.</p>
-      </article>
-    </section>
+    <main>
+      <section class="buttons">
+        <a href="#contact" class="btn">Contact</a>
+        <a href="#servicii" class="btn">Servicii</a>
+        <a href="#program" class="btn">Program</a>
+      </section>
 
-    <section id="preturi" class="info">
-      <h2>Prețuri orientative</h2>
-      <ul>
-        <li>Înmatriculare: 150-300 RON</li>
-        <li>Transcriere: 200-400 RON</li>
-        <li>Certificat distrugere: la cerere</li>
-      </ul>
-    </section>
+      <section id="servicii">
+        <h2>Servicii oferite</h2>
+        <ul>
+          <li>Transcriere auto rapidă</li>
+          <li>Radiere vehicule</li>
+          <li>Numere provizorii</li>
+          <li>Contracte vânzare-cumpărare</li>
+          <li>Declarații fiscale și certificat distrugere</li>
+        </ul>
+      </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Telefon: <a href="tel:+407XXXXXXXXX">+40 7XX XXX XXX</a></p>
-      <p>Email: <a href="mailto:contact@acte-auto-iasi.ro">contact@acte-auto-iasi.ro</a></p>
-      <form id="contactForm" class="contact-form" action="#" onsubmit="return false;">
-        <input type="text" id="name" placeholder="Nume" required>
-        <input type="tel" id="phone" placeholder="Telefon" required>
-        <textarea id="message" placeholder="Mesaj" rows="4" required></textarea>
-        <button class="btn large" type="submit">Trimite</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2025 Acte Auto Iași — Toate drepturile rezervate</p>
-  </footer>
-
-<script src="script.js"></script>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>📞 074x xxx xxx</p>
+        <p>📍 Iași, România</p>
+        <p>🕐 Luni - Vineri: 09:00 - 17:00</p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
